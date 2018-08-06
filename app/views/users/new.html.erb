@@ -2,8 +2,10 @@
 <h1><%= t ".title" %></h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+
     <%= form_for @user do |f| %>
       <%= render "shared/error_messages" %>
+
       <%= label_tag t ".name" %>
       <%= f.text_field :name, class: "form-control" %>
 
