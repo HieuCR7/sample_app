@@ -36,7 +36,6 @@ en:
       title_link4: "Ruby on Rails"
     home:
       title: "Welcome to the Sample App"
-      header: "Sample App"
       link: "This is the home page for the %{url} sample application."
       title_link: "Ruby on Rails Tutorial"
       button: "Sign up now!"
@@ -66,6 +65,29 @@ en:
       confirmation: "Confirmation password"
     create:
       message: "Welcome to the Sample App!"
+      flash_info: "Please check your email to activate your account."
+    index:
+      title: "All users"
+      flash_danger: "Please log in."
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      submit: "Save changes"
+      change: "change"
+      flash_danger: "Please log in!"
+      name: "name"
+      email: "email"
+      pass: "password"
+      confirmation: "password_confirmation"
+    update:
+      flash_success: "Profile updated"
+    destroy:
+      flash_success: "Success user delete!"
+      flash_danger: "fails user delete!"
+    user:
+      delete: "delete"
+      sure: "You sure?"
+
   sessions:
     new:
       email: "email"
@@ -73,10 +95,10 @@ en:
       login: "Log in"
       signup: "Sign up now!"
       remember_me: "Remember me on this computer"
-
       text: "New user?"
     create:
-      msg: "Invalid email/password combination"
+      flash_danger: "Invalid email/password combination"
+      flash_warning: "Account not activated. Check your email for the activation link."
 
   shared:
     error_messages:
@@ -85,3 +107,18 @@ en:
         one: "1 error."
         other: "%{count} errors."
 
+  account_activations:
+    edit:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+
+  user_mailer:
+    account_activation:
+      h1: "Sample App"
+      hi: "Hi"
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link: "Activate"
+      subject: "Account activation"
+    password_reset:
+      h1: "User#password_reset"
+      text: "find me in app/views/user_mailer/password_reset.html.erb"
