@@ -1,8 +1,4 @@
-<% provide:title, t(".title_1") %>
-<h1><%= t(".title_2") %></h1>
+<h1><%= t(".header") %></h1>
 <p>
-  <!-- This is the home page for the
-  <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-  sample application. -->
   <%= t(".link", url: link_to(t(".title_link"), "http://www.railstutorial.org/")).html_safe %>
 </p>
