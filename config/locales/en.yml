@@ -90,6 +90,14 @@ en:
       sure: "You sure?"
     show:
       micro: "Microposts"
+    unfollow:
+      unfollw: "Unfollow"
+    follow:
+      follw: "Follow"
+    following:
+      follw: "Following"
+    followers:
+      follower: "Followers"
 
   sessions:
     new:
@@ -110,12 +118,16 @@ en:
       error:
         one: "1 error."
         other: "%{count} errors."
+      errors_micro: "The form contains"
     user_info:
       my_profile: "view my profile"
       total_micro: "micropost"
     micropost_form:
       placeholder: "Compose new micropost..."
       button: "Post"
+    stats:
+      follw: "followers"
+      follwing: "following"
 
   account_activations:
     edit:
@@ -154,9 +166,6 @@ en:
       hi: "Hi"
       text: "Welcome to the Sample App! Click on the link below to activate your account:"
       link: "Activate"
-
-  application_mailer:
-    from: "noreply@example.com"
 
   microposts:
     create:
