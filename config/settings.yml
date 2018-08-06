@@ -3,6 +3,7 @@ user:
   maximum_email: 255
   minimum_pass: 6
   size: 50
+  expire: 2
 sessions:
   remember_me: "1"
 users:

@@ -68,7 +68,7 @@ en:
       flash_info: "Please check your email to activate your account."
     index:
       title: "All users"
-      flash_danger: "Please log in."
+      flash_danger: "Please log in!"
     edit:
       title: "Edit user"
       h1: "Update your profile"
@@ -96,6 +96,7 @@ en:
       signup: "Sign up now!"
       remember_me: "Remember me on this computer"
       text: "New user?"
+      forgot: "(forgot password)"
     create:
       flash_danger: "Invalid email/password combination"
       flash_warning: "Account not activated. Check your email for the activation link."
@@ -112,13 +113,44 @@ en:
       flash_success: "Account activated!"
       flash_danger: "Invalid activation link"
 
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "email"
+      button: "Submit"
+    update:
+      error_msg: "can't be blank"
+      success_msg: "Password has been reset."
+    create:
+      success_msg: "Email sent with password reset instructions"
+      fails_msg: "Email address not found"
+    edit:
+      title: "Reset password"
+      pass: "password"
+      submit: "Update password"
+      confirmation: "Confirmation password"
+      danger_msg: "Password reset has expired."
+      error_danger: "Wrong user!"
+      not_found_user: "not found user!"
+
+
   user_mailer:
+    password_reset:
+      text_1: "To reset your password click the link below:"
+      title: "Password reset"
+      link: "Reset password"
+      text_2: "This link will expire in two hours."
+      text_3: "If you did not request your password to be reset, please ignore this email and
+              your password will stay as it is."
+      activation: "Account activation"
+      pass_reset: "password reset"
     account_activation:
       h1: "Sample App"
       hi: "Hi"
       text: "Welcome to the Sample App! Click on the link below to activate your account:"
       link: "Activate"
-      subject: "Account activation"
-    password_reset:
-      h1: "User#password_reset"
-      text: "find me in app/views/user_mailer/password_reset.html.erb"
+      activation: "Account activation"
+      pass_reset: "password reset"
+
+  application_mailer:
+    from: "noreply@example.com"
