@@ -39,6 +39,7 @@ en:
       link: "This is the home page for the %{url} sample application."
       title_link: "Ruby on Rails Tutorial"
       button: "Sign up now!"
+      micro_feed: "Micropost Feed"
     help:
       title: "Help"
       link_1: "Get help on the Ruby on Rails Tutorial at the %{url_1} To get help on this sample app, see the"
@@ -87,6 +88,8 @@ en:
     user:
       delete: "delete"
       sure: "You sure?"
+    show:
+      micro: "Microposts"
 
   sessions:
     new:
@@ -107,6 +110,65 @@ en:
       error:
         one: "1 error."
         other: "%{count} errors."
+    user_info:
+      my_profile: "view my profile"
+      total_micro: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      button: "Post"
+
+  account_activations:
+    edit:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+
+  password_resets:
+    new:
+      title: "Forgot password"
+      email: "email"
+      button: "Submit"
+    update:
+      error_msg: "can't be blank"
+      success_msg: "Password has been reset."
+    create:
+      success_msg: "Email sent with password reset instructions"
+      fails_msg: "Email address not found"
+    edit:
+      title: "Reset password"
+      pass: "password"
+      submit: "Update password"
+      flash: "Password reset has expired."
+
+  user_mailer:
+    password_reset:
+      text_1: "To reset your password click the link below:"
+      title: "Password reset"
+      link: "Reset password"
+      text_2: "This link will expire in two hours."
+      text_3: "If you did not request your password to be reset, please ignore this email and
+              your password will stay as it is."
+      subject_1: "Account activation"
+      subject_2: "password reset"
+    account_activation:
+      h1: "Sample App"
+      hi: "Hi"
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link: "Activate"
+
+  application_mailer:
+    from: "noreply@example.com"
+
+  microposts:
+    create:
+      micro_create: "Micropost created success!"
+    destroy:
+      micro_delete: "Micropost delete success!"
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      url_delete: "delete"
+      confirm_delete: "You are sure?"
+      size_too_large: "should be less than 5MB"
 
   account_activations:
     edit:
@@ -132,7 +194,6 @@ en:
       danger_msg: "Password reset has expired."
       error_danger: "Wrong user!"
       not_found_user: "not found user!"
-
 
   user_mailer:
     password_reset:
