@@ -3,12 +3,28 @@ en:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
+    footer:
+      link_1: "The %{url_1}"
+      title_link1: "Ruby on Rails Tutorial"
+      link_2: "by %{url_2}"
+      title_link2: "Michael Hartl"
+      link_about: "About"
+      link_ctc: "Contact"
+      link_new: "%{url_3}"
+      title_new: "News"
+    header:
+      title: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+
   static_pages:
     home:
       title: "Home"
       header: "Sample App"
       link: "This is the home page for the %{url} sample application."
-      title_link: "Ruby on Rails Tutorial"
+      link_title: "Ruby on Rails Tutorial"
+      button: "Sign up now!"
     about:
       title: "About"
       link_1: "The %{url_1}"
@@ -29,6 +45,12 @@ en:
       title: "Contact"
       link: "Contact the Ruby on Rails Tutorial about the sample app at the %{url}."
       title_link: "contact page"
+
   helpers:
     application_helper:
       base_title: "Ruby on Rails Tutorial Sample App"
+
+  users:
+    new:
+      title: "Sing up"
+      content: "Find me in app/views/users/new.html.erb"
