@@ -52,5 +52,20 @@ en:
 
   users:
     new:
-      title: "Sing up"
+      title: "Sign up"
       content: "Find me in app/views/users/new.html.erb"
+      submit: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      confirmation: "Confirmation password"
+    create:
+      message: "Welcome to the Sample App!"
+
+  shared:
+    error_messages:
+      text: "The form contains"
+      error:
+        one: "1 error."
+        other: "%{count} errors."
+
