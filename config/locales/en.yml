@@ -17,6 +17,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
 
   static_pages:
     home:
@@ -61,6 +66,14 @@ en:
       confirmation: "Confirmation password"
     create:
       message: "Welcome to the Sample App!"
+  sessions:
+    msg: "Invalid email/password combination"
+    new:
+      email: "email"
+      pass: "password"
+      login: "Log in"
+      signup: "Sign up now!"
+      text: "New user?"
 
   shared:
     error_messages:
