@@ -24,12 +24,6 @@ en:
       account: "Account"
 
   static_pages:
-    home:
-      title: "Home"
-      header: "Sample App"
-      link: "This is the home page for the %{url} sample application."
-      link_title: "Ruby on Rails Tutorial"
-      button: "Sign up now!"
     about:
       title: "About"
       link_1: "The %{url_1}"
@@ -40,6 +34,12 @@ en:
       title_link3: "screencast series"
       link_4: "%{url_4}. This is the sample application for the tutorial."
       title_link4: "Ruby on Rails"
+    home:
+      title: "Welcome to the Sample App"
+      header: "Sample App"
+      link: "This is the home page for the %{url} sample application."
+      title_link: "Ruby on Rails Tutorial"
+      button: "Sign up now!"
     help:
       title: "Help"
       link_1: "Get help on the Ruby on Rails Tutorial at the %{url_1} To get help on this sample app, see the"
@@ -67,13 +67,16 @@ en:
     create:
       message: "Welcome to the Sample App!"
   sessions:
-    msg: "Invalid email/password combination"
     new:
       email: "email"
       pass: "password"
       login: "Log in"
       signup: "Sign up now!"
+      remember_me: "Remember me on this computer"
+
       text: "New user?"
+    create:
+      msg: "Invalid email/password combination"
 
   shared:
     error_messages:
