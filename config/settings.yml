@@ -2,5 +2,11 @@ user:
   maximum_name: 50
   maximum_email: 255
   minimum_pass: 6
+  size: 50
 sessions:
   remember_me: "1"
+users:
+  size_hp: 80
+  page: 10
+settings:
+  port: "587"

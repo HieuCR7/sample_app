@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-
   include SessionsHelper
 
   rescue_from ActiveRecord::RecordNotFound, with: :not_found
@@ -10,10 +9,6 @@ class ApplicationController < ActionController::Base
 
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
-  end
-
-  def hello
-    render html: "hello, world!"
   end
 
   def not_found
