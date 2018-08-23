@@ -1,4 +1,5 @@
 Rails.application.configure do
+
   config.cache_classes = false
 
   config.eager_load = false
@@ -35,12 +36,12 @@ Rails.application.configure do
   host = "localhost:3000"
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :address        => Figaro.env.address,
-    :port           => Settings.port,
-    :authentication => :plain,
-    :user_name      => Figaro.env.user_name,
-    :password       => Figaro.env.password,
-    :domain         => Figaro.env.domain,
-    :enable_starttls_auto => true
+    address: ENV["address"],
+    port: Settings.port,
+    authentication: :plain,
+    user_name: ENV["user_name"],
+    password: ENV["password"],
+    domain: ENV["domain"],
+    enable_starttls_auto: true
   }
 end
