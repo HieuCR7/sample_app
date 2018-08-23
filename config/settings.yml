@@ -4,6 +4,7 @@ user:
   minimum_pass: 6
   size: 50
   expire: 2
+  per_page: 7
 sessions:
   remember_me: "1"
 users:
@@ -11,3 +12,11 @@ users:
   page: 10
 settings:
   port: "587"
+micropost:
+  maximum: 140
+  size_micro: 50
+  size_picture: 5
+user_info:
+  size_img: 50
+uploaders:
+  picture_upload: 400
